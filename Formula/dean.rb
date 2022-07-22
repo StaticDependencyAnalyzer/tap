@@ -8,7 +8,7 @@ class Dean < Formula
     depends_on "rust" => :build 
     
     def install
-        system "cargo", "install", "--features", "no-self-update", *std_cargo_args  
+        system "cargo", "install", *std_cargo_args  
     end
   
     test do
